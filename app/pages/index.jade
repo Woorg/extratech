@@ -1,6 +1,14 @@
 extends /blocks/layout-default/layout-default
 
-block head
-	- var pageTitle = 'CSSSR Project Template';
+//- include /blocks/icon/icon
+include /blocks/header/header
+include /blocks/services/services
+include /blocks/footer/footer
 
+block head
+	- var pageTitle = 'Главная';
 block content
+
+	+header()
+	+services()
+	+footer()
