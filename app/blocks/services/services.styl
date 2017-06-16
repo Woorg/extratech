@@ -3,6 +3,7 @@
 	color #FFF
 	&__in
 		@extends .in
+		padding-bottom 50px
 	&__title
 		margin-bottom 22px
 		font-family $fd
@@ -20,12 +21,11 @@
 		text-decoration none
 		&:after
 			position absolute
-			z-index 12
+			z-index 1
 			top 0
 			left 0
 			right 0
 			bottom 0
-			// background-color rgba(0,0,0, .6)
 			content ""
 		&:hover
 			&:after
@@ -53,7 +53,7 @@
 		background-size cover
 		background-repeat no-repeat
 		text-align center
-		transition background-image .2s ease
+		transition background .2s ease
 		.services__link
 			padding-top 54px
 			text-align center
@@ -63,7 +63,7 @@
 			min-height auto
 	&__item_first
 		position relative
-		z-index 13
+		z-index 16
 		border-top none
 		width 100%
 		height 188px
@@ -188,8 +188,7 @@
 			bottom 28px
 
 	&__item_light
-		z-index 12
-
+		z-index 15
 		width 243px
 		background-position-x calc(50% - 1px)
 		background-image url('../images/content/serv-2.jpg')
@@ -212,14 +211,20 @@
 				content ""
 			&:after
 				z-index -1
-				right -33px
 				top 115px
+				right -33px
 				size(33px, 66px)
 				background $bg-c
 				border-radius 0 66px 66px 0
-
+		&:hover
+			.services__item-w
+				&:after
+					top 113px
+					right -32px
+					size(70px)
+					border-radius 50%
 	&__item_air
-		z-index 9
+		z-index 14
 		width 222px
 		background-image url('../images/content/serv-3.jpg')
 		background-position -96px 0
@@ -246,8 +251,10 @@
 				background $bg-c
 				border-radius 0 66px 66px 0
 
+
+
 	&__item_safety
-		z-index 8
+		z-index 13
 		width 240px
 		background-image url('../images/content/serv-4.jpg')
 		background-position -115px -9px
@@ -275,7 +282,7 @@
 				border-radius 0 66px 66px 0
 
 	&__item_video
-		z-index 7
+		z-index 12
 		width 233px
 		background-image url('../images/content/serv-5.jpg')
 		background-position -126px 0px
@@ -291,45 +298,104 @@
 				right -32px
 				size(70px)
 				background url('../images/content/serv-5.jpg') no-repeat
-				background-position -1006px -439px
+				background-position -457px -159px
 				border-radius 50%
 				content ""
-			&:before
+			&:after
 				z-index -1
 				right -33px
 				top 115px
 				size(33px, 66px)
 				background $bg-c
-				background url('../images/content/serv-5.jpg') no-repeat
-
 				border-radius 0 66px 66px 0
+		&:hover
+			&:after
+				z-index 1
+				background-color rgba(0,198,255, .6)
+			&:before
+				z-index -1
+			.services__cont
+				z-index 2
 
 	&__item_music
-		z-index 4
+		z-index 9
 		width 232px
 		background-position-x calc(50% - 6px)
 		background-image url('../images/content/serv-6.jpg')
 
 
 	&__item_last
-		margin-top 40px
+		margin-top 30px
 		.services__link
 			padding-top 17px
+		.services__cont
+			padding-top 19px
+		.services__item-title
+			font-size 24px
 
 	&__item_design
-		z-index 2
+		z-index 15
 		width 390px
 		background-image url('../images/content/serv-7.jpg')
+		background-position -20px 0px
+
+		.services__item-w
+			position relative
+			height 100%
+			&:before,
+			&:after
+				position absolute
+				z-index 1
+				top 113px
+				right -32px
+				size(70px)
+				background url('../images/content/serv-7.jpg') no-repeat
+				background-position -1010px -348px
+				border-radius 50%
+				content ""
+			&:after
+				z-index -1
+				right -33px
+				top 115px
+				size(33px, 66px)
+				background $bg-c
+				border-radius 0 66px 66px 0
 
 	&__item_finishing
-		z-index 1
+		z-index 14
 		width 386px
 		background-image url('../images/content/serv-8.jpg')
+		background-position -30px 0px
 
+		.services__item-w
+			position relative
+			height 100%
+			&:before,
+			&:after
+				position absolute
+				z-index 1
+				top 113px
+				right -32px
+				size(70px)
+				background url('../images/content/serv-8.jpg') no-repeat
+				background-position -1093px -408px
+				border-radius 50%
+				content ""
+			&:after
+				z-index -1
+				right -33px
+				top 115px
+				size(33px, 66px)
+				background $bg-c
+				border-radius 0 66px 66px 0
 
 	&__item_electric
+		z-index 12
 		width 394px
 		background-image url('../images/content/serv-9.jpg')
+		background-position -56px 0px
+
+
 	&__item-w
 		height 100%
 	&__cont

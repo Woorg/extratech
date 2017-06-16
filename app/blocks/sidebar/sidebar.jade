@@ -1,3 +1,28 @@
 mixin sidebar()
-	+b.sidebar&attributes(attributes)
-		block
+	aside.sidebar
+		.sidebar__block
+			h2.sidebar__title Основные услуги
+			ul.sidebar__nav
+				li.sidebar__item
+					a.sidebar__link(href="#") Умный дом
+				li.sidebar__item.current-menu-item
+					a.sidebar__link(href="#") Освещение
+				li.sidebar__item
+					a.sidebar__link(href="#") Управление климатом
+				li.sidebar__item
+					a.sidebar__link(href="#") Безопасность
+				li.sidebar__item
+					a.sidebar__link(href="#") Видеонаблюдение
+				li.sidebar__item
+					a.sidebar__link(href="#") Установка Hi
+
+		.sidebar__block
+			h2.sidebar__title Дополнительные услуги
+			ul.sidebar__nav
+				li.sidebar__item
+					a.sidebar__link(href="#") Дизайн интерьера
+				li.sidebar__item
+					a.sidebar__link(href="#") Отделочные работы
+				li.sidebar__item
+					a.sidebar__link(href="#") Электромонтажные работы
+

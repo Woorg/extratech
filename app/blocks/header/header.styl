@@ -7,7 +7,8 @@
 	display block
 	background rgba(0,0,0 , .7)
 	color #FFF
-
+	&_inner
+		background url('../images/general/header-inner.jpg') 50% 0 repeat-x
 	&__in
 		position relative
 		@extends .in
@@ -21,7 +22,7 @@
 
 	&__nav
 		margin-top 58px
-		margin-left 137px
+		margin-left 122px
 		width 560px
 		float left
 
@@ -60,17 +61,26 @@
 	&__list
 		font-size 0
 	li
-		margin-left 30px
+		margin-left 10px
 		display inline-block
 		vertical-align top
 		&:first-child
 			margin-left 0
+		&.current-menu-item,
+		&:hover
+			a
+				border 1px solid #00c6ff
 	a
 		position relative
+		border 1px solid transparent
+		padding-top 1px
+		padding-right 14px
+		padding-bottom 3px
+		padding-left 14px
 		font-size 24px
 		color #ffffff
 		text-decoration none
-
+		border-radius 5px
 
 .h-contacts
 	&__w
@@ -100,8 +110,16 @@
 		content ""
 
 
+.phone_horiz
+	margin-left 15px
+	display inline-block
+	vertical-align top
+	&:first-child
+		margin-left 0
+
 .social
 	text-align center
+
 	&__item
 		margin-left 10px
 		display inline-block
@@ -126,4 +144,11 @@
 	&__item_pint
 		.social__link
 			sprite($pint_icon)
+	&__item_skype
+		.social__link
+			sprite($skype_icon)
+	&__item_email
+		.social__link
+			sprite($email_icon)
+
 

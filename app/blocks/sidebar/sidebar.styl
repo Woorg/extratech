@@ -1,2 +1,33 @@
 .sidebar
+	padding-top 63px
 	display block
+	width 242px
+	float left
+	&__block
+		margin-bottom 30px
+	&__title
+		margin-bottom 15px
+		font-size 24px
+	&__nav
+		margin-left 5px
+	&__item
+		position relative
+		margin-bottom 10px
+		&:after
+			position absolute
+			top 2px
+			left -7px
+			content "-"
+		&:last-child
+			margin-bottom 0
+		&.current-menu-item,
+		&:hover
+			a
+				font-family $fd
+	a
+		font-family $fb
+		font-size 20px
+		text-decoration none
+		color #020202
+
+

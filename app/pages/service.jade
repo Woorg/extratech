@@ -1,0 +1,42 @@
+extends /blocks/layout-default/layout-default
+
+include /blocks/icon/icon
+include /blocks/header/header
+include /blocks/main/main
+include /blocks/breadcrumbs/breadcrumbs
+include /blocks/sidebar/sidebar
+include /blocks/content/content
+include /blocks/article/article
+include /blocks/partners/partners
+
+
+
+
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Освещение';
+block content
+
+	+header-inner()
+	+main()
+		+breadcrumbs()
+			ul.breadcrumbs__list
+				li.breadcrumbs__item
+					.breadcrumbs__link(href="#link") Главная
+				li.breadcrumbs__item
+					.breadcrumbs__link(href="#link") Услуги
+				li.breadcrumbs__item
+					.breadcrumbs__link(href="#link") Автоматизация
+		+sidebar()
+		+content()
+			+article()
+			+partners()
+				ul.partners__list
+					li.partners__item.partners__item_itre
+						a.partners__link(href="#") Link
+					li.partners__item.partners__item_lightstar
+						a.partners__link(href="#") Link
+					li.partners__item.partners__item_morosini
+						a.partners__link(href="#") Link
+	+footer()
