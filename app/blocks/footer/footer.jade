@@ -1,3 +1,16 @@
 mixin footer()
-	+b.footer&attributes(attributes)
-		block
+	.footer
+		.footer__in
+			a.footer__logo.logo(href="#logo")
+				+icon('logo', true).logo__icon
+				span.logo__text Extratech
+			.footer__phones
+				.phone 050 550 50 10
+				.phone 068 550 50 10
+				.phone 073 550 50 10
+			.footer__social.social
+				a.social__link.social__link_vk(href="") Vkontakte
+				a.social__link.social__link_youtube(href="") Youtube
+				a.social__link.social__link_inst(href="") Instagram
+				a.social__link.social__link_skype(href="") Skype
+				a.social__link.social__link_email(href="") Email

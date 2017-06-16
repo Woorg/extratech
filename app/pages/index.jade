@@ -1,7 +1,8 @@
 extends /blocks/layout-default/layout-default
 
-//- include /blocks/icon/icon
+include /blocks/icon/icon
 include /blocks/header/header
+include /blocks/hero/hero
 include /blocks/services/services
 include /blocks/footer/footer
 
@@ -10,5 +11,6 @@ block head
 block content
 
 	+header()
+	+hero()
 	+services()
 	+footer()

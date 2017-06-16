@@ -3,41 +3,72 @@ mixin services()
 		.services__in
 			h2.services__title Услуги
 
-			ul.services__list
-				li.services__item.services__item_first
-					a.services__link(href="#link" style="")
-						span.services__item-title Системы “Умный дом”
-						span.services__more Подробнее
-				li.services__item
-					a.services__link(href="#link")
-						span.services__item-title Освещение
-						span.services__more Подробнее
-				li.services__item
-					a.services__link(href="#link")
-						span.services__item-title Управление климатом
-						span.services__more Подробнее
-				li.services__item
-					a.services__link(href="#link")
-						span.services__item-title <strong>Безопасность</strong> (сигнализация, системы контроля доступа )
-						span.services__more Подробнее
-				li.services__item
-					a.services__link(href="#link")
-						span.services__item-title Видеонаблюдение
-						span.services__more Подробнее
-				li.services__item
-					a.services__link(href="#link")
-						span.services__item-title Установка HI FI
-						span.services__more Подробнее
-				li.services__item.services__item_last
-					a.services__link(href="#link")
-						span.services__item-title Дизайн интерьера
-						span.services__more Подробнее
-				li.services__item.services__item_last
-					a.services__link(href="#link")
-						span.services__item-title Отделочные работы
-						span.services__more Подробнее
-				li.services__item.services__item_last
-					a.services__link(href="#link")
-						span.services__item-title Электромонтажные работы
-						span.services__more Подробнее
+			.services__list
+				a.services__link.services__item.services__item_first(href='#link')
+					.services__item-w
+						.services__item-w-2
+							.services__item-w-3
+								.services__item-w-4
+									.services__item-w-5
+										.services__cont(href="#link")
+											span.services__item-title Системы “Умный дом”
+											.services__item-bottom
+												span.services__more Подробнее
+
+
+				a.services__link.services__item.services__item_light(href='#link')
+					.services__item-w
+						.services__cont(href="#link")
+							span.services__item-title Освещение
+							.services__item-bottom
+								span.services__more Подробнее
+
+				a.services__link.services__item.services__item_air(href='#link')
+					.services__item-w
+						.services__cont(href="#link")
+							span.services__item-title Управление климатом
+							.services__item-bottom
+								span.services__more Подробнее
+
+				a.services__link.services__item.services__item_safety(href='#link')
+					.services__item-w
+						.services__cont(href="#link")
+							span.services__item-title Безопасность <span>(сигнализация, <br/>системы контроля доступа)</span>
+							.services__item-bottom
+								span.services__more Подробнее
+
+				a.services__link.services__item.services__item_video(href='#link')
+					.services__item-w
+						.services__cont(href="#link")
+							span.services__item-title Видеонаблюдение
+							.services__item-bottom
+								span.services__more Подробнее
+
+				a.services__link.services__item.services__item_music(href='#link')
+					.services__item-w
+						.services__cont(href="#link")
+							span.services__item-title Установка HI FI
+							.services__item-bottom
+								span.services__more Подробнее
+
+				a.services__link.services__item.services__item_design.services__item_last(href='#link')
+					.services__item-w
+						.services__cont(href="#link")
+							span.services__item-title Дизайн интерьера
+							.services__item-bottom
+								span.services__more Подробнее
+
+				a.services__link.services__item.services__item_finishing.services__item_last(href='#link')
+					.services__item-w
+						.services__cont(href="#link")
+							span.services__item-title Отделочные работы
+							.services__item-bottom
+								span.services__more Подробнее
+
+				a.services__link.services__item.services__item_electric.services__item_last(href='#link')
+					.services__item-w
+						.services__cont(href="#link")
+							span.services__item-title Электромонтажные работы
+							.services__item-bottom
+								span.services__more Подробнее
 

@@ -1,10 +1,12 @@
 mixin header()
 	header.header
-		.header__container
+		.header__in
 			.header__left
-				a.header__logo.logo(href="#logo") Extratech
+				a.header__logo.logo(href="#logo")
+					+icon('logo', true).logo__icon
+					span.logo__text Extratech
 				.header__lang.lang
-					a.lang__link(href="#ua") ua
+					a.lang__link.lang__link_active(href="#ua") ua
 					a.lang__link(href="#ru") ru
 					a.lang__link(href="#eng") eng
 
@@ -17,14 +19,20 @@ mixin header()
 					li
 						a(href="#link") Контакты
 
-		.header__contacts.h-contacts
-			a.h-contacts__phone.phone(href="tel:") 050 550 50 10
-			a.h-contacts__phone.phone(href="tel:") 068 550 50 10
-			a.h-contacts__phone.phone(href="tel:") 073 550 50 10
-			.h-contacts__social
-				a.social__link.social__link_vk(href="") Vkontakte
-				a.social__link.social__link_youtube(href="") Youtube
-				a.social__link.social__link_inst(href="") Instagram
-				a.social__link.social__link_fb(href="") Facebook
-				a.social__link.social__link_pint(href="") Pinterest
+			.header__contacts.h-contacts
+				.h-contacts__w
+					a.h-contacts__phone.phone(href="tel:0505505010") 050 550 50 10
+					a.h-contacts__phone.phone(href="tel:0685505010") 068 550 50 10
+					a.h-contacts__phone.phone(href="tel:0735505010") 073 550 50 10
+				.h-contacts__social.social
+					li.social__item.social__item_vk
+						a.social__link(href="") Vkontakte
+					li.social__item.social__item_youtube
+						a.social__link(href="") Youtube
+					li.social__item.social__item_inst
+						a.social__link(href="") Instagram
+					li.social__item.social__item_fb
+						a.social__link(href="") Facebook
+					li.social__item.social__item_pint
+						a.social__link(href="") Pinterest
 
