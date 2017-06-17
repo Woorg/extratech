@@ -1,5 +1,5 @@
 .sidebar
-	padding-top 63px
+	padding-top 48px
 	display block
 	width 242px
 	float left
@@ -8,11 +8,15 @@
 	&__title
 		margin-bottom 15px
 		font-size 24px
+	&__title_heavy
+		font-family $fd
+		font-size 20px
 	&__nav
 		margin-left 5px
 	&__item
 		position relative
-		margin-bottom 10px
+		margin-bottom 0
+		line-height 1.4
 		&:after
 			position absolute
 			top 2px
@@ -31,3 +35,8 @@
 		color #020202
 
 
+	// &__filter
+
+	&__filter-item
+		line-height 1.4
+	// &__filter-link

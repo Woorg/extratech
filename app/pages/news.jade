@@ -1,0 +1,34 @@
+extends /blocks/layout-default/layout-default
+
+include /blocks/icon/icon
+include /blocks/header/header
+include /blocks/main/main
+include /blocks/breadcrumbs/breadcrumbs
+include /blocks/sidebar/sidebar
+include /blocks/content/content
+include /blocks/article/article
+include /blocks/partners/partners
+
+
+
+
+include /blocks/footer/footer
+
+block head
+	- var pageTitle = 'Новости';
+block content
+
+	+header-inner()
+	+main()
+		+breadcrumbs()
+			ul.breadcrumbs__list
+				li.breadcrumbs__item
+					.breadcrumbs__link(href="#link") Главная
+				li.breadcrumbs__item
+					.breadcrumbs__link(href="#link") Новости
+		+sidebar-news()
+		+content()
+			h1.content__title.content__title_heavy Новости
+			+article-news()
+
+	+footer()
