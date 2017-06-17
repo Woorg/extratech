@@ -2,6 +2,10 @@
 	display block
 	float right
 	width 852px
+	width ratio-percentage(852,1170)
+	+r($d)
+		width auto
+		float none
 	&__title
 		margin-bottom 20px
 		font-family $fb
@@ -12,8 +16,6 @@
 		font-family $fd
 	&__image
 		margin-bottom 30px
-		width 853px
-		height 211px
 		img
 			max-width 100%
 			height auto

@@ -3,6 +3,8 @@
 	&__in
 		@extends .in
 		min-height 634px
+		+r($d)
+			min-height 415px
 	&__slider
 		overflow hidden
 	&__item
@@ -10,6 +12,8 @@
 		padding-top 180px
 		overflow hidden
 		cursor move
+		+r($d)
+			padding-top 0
 		&:before
 			position absolute
 			top 0
@@ -26,6 +30,9 @@
 		z-index 1
 		text-align center
 		color #FFF
+		+r($d)
+			padding-top 0
+			min-height 415px
 	&__title
 		margin-bottom 30px
 		font-family $fb

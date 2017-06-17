@@ -2,7 +2,12 @@
 	padding-top 48px
 	display block
 	width 242px
+	width ratio-percentage(242,1170)
 	float left
+	+r($d)
+		width auto
+		float none
+		text-align center
 	&__block
 		margin-bottom 30px
 	&__title
@@ -22,6 +27,8 @@
 			top 2px
 			left -7px
 			content "-"
+			+r($d)
+				display none
 		&:last-child
 			margin-bottom 0
 		&.current-menu-item,
@@ -34,9 +41,19 @@
 		text-decoration none
 		color #020202
 
-
 	// &__filter
 
 	&__filter-item
 		line-height 1.4
 	// &__filter-link
+
+
+.side-contacts
+	margin-bottom 20px
+	&__title
+		margin-bottom 5px
+		font-size 20px
+	&__text
+		font-size 18px
+		line-height 1.4
+

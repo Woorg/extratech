@@ -1,0 +1,28 @@
+include /../node_modules/bemto.jade/bemto
+include /../node_modules/jade-injected/jade-injected
+include ../page/page
+include ../scripts/scripts
+
+doctype html
+html(lang='ru')
+	include ../head/head
+	+page
+		block content
+
+		script.
+			function initMap() {
+				var uluru = {lat: 50.74456, lng: 25.368195};
+				var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 18,
+					center: uluru
+				});
+				var marker = new google.maps.Marker({
+					position: uluru,
+					map: map
+				});
+			}
+
+		+scripts(['//maps.googleapis.com/maps/api/js?key=AIzaSyBMTYX-efDZ5IJcRPmHRJZ3v5S9WhHWaw0&callback=initMap','app.min.js'])
+
+
+

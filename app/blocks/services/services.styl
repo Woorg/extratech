@@ -27,6 +27,7 @@
 			right 0
 			bottom 0
 			content ""
+			tr(background-color .05s ease)
 		&:hover
 			&:after
 				background-color rgba(0,198,255, .6)
@@ -57,7 +58,7 @@
 		.services__link
 			padding-top 54px
 			text-align center
-		+r($d)
+		+r($d-l)
 			display block
 			width auto
 			min-height auto
@@ -70,6 +71,10 @@
 		min-height 188px
 		background-image url('../images/content/serv-1.jpg')
 		background-position 0 -130px
+		+r($d-l)
+			height 275px
+			background-position 0 0
+
 		.services__item-w
 			position relative
 			height 100%
@@ -84,6 +89,8 @@
 				background-position -78px -292px
 				border-radius 50%
 				content ""
+				+r($d-l)
+					display none
 			&:after
 				z-index -1
 				left 65px
@@ -106,6 +113,8 @@
 				background-position -323px -302px
 				border-radius 50%
 				content ""
+				+r($d-l)
+					display none
 			&:after
 				z-index -1
 				left 306px
@@ -128,6 +137,8 @@
 				background-position -570px -291px
 				border-radius 50%
 				content ""
+				+r($d-l)
+					display none
 			&:after
 				z-index -1
 				left 547px
@@ -149,6 +160,8 @@
 				background-position -1054px -291px
 				border-radius 50%
 				content ""
+				+r($d-l)
+					display none
 			&:after
 				z-index -1
 				right 63px
@@ -171,6 +184,8 @@
 				background-position -794px -291px
 				border-radius 50%
 				content ""
+				+r($d-l)
+					display none
 			&:after
 				z-index -1
 				right 305px
@@ -193,6 +208,9 @@
 		background-position-x calc(50% - 1px)
 		background-image url('../images/content/serv-2.jpg')
 		background-position -120px 0
+		+r($d-l)
+			width auto
+			background-position 0 0
 
 		.services__item-w
 			position relative
@@ -209,6 +227,8 @@
 				background-position -1006px -422px
 				border-radius 50%
 				content ""
+				+r($d-l)
+					display none
 			&:after
 				z-index -1
 				top 115px
@@ -228,6 +248,9 @@
 		width 222px
 		background-image url('../images/content/serv-3.jpg')
 		background-position -96px 0
+		+r($d-l)
+			width auto
+			background-position 0 0
 
 		.services__item-w
 			position relative
@@ -243,6 +266,8 @@
 				background-position -948px -400px
 				border-radius 50%
 				content ""
+				+r($d-l)
+					display none
 			&:after
 				z-index -1
 				right -33px
@@ -258,6 +283,9 @@
 		width 240px
 		background-image url('../images/content/serv-4.jpg')
 		background-position -115px -9px
+		+r($d-l)
+			width auto
+			background-position 0 0
 
 		.services__item-w
 			position relative
@@ -273,6 +301,8 @@
 				background-position -2010px -397px
 				border-radius 50%
 				content ""
+				+r($d-l)
+					display none
 			&:after
 				z-index -1
 				right -33px
@@ -286,6 +316,9 @@
 		width 233px
 		background-image url('../images/content/serv-5.jpg')
 		background-position -126px 0px
+		+r($d-l)
+			width auto
+			background-position 0 0
 
 		.services__item-w
 			position relative
@@ -301,6 +334,8 @@
 				background-position -457px -159px
 				border-radius 50%
 				content ""
+				+r($d-l)
+					display none
 			&:after
 				z-index -1
 				right -33px
@@ -322,22 +357,31 @@
 		width 232px
 		background-position-x calc(50% - 6px)
 		background-image url('../images/content/serv-6.jpg')
-
+		+r($d-l)
+			width auto
+			background-position 0 0
 
 	&__item_last
 		margin-top 30px
+		+r($d-l)
+			margin-top 0
 		.services__link
 			padding-top 17px
 		.services__cont
 			padding-top 19px
 		.services__item-title
 			font-size 24px
+			+r($d-l)
+				font-size 20px
 
 	&__item_design
 		z-index 15
 		width 390px
 		background-image url('../images/content/serv-7.jpg')
 		background-position -20px 0px
+		+r($d-l)
+			width auto
+			background-position 0 0px
 
 		.services__item-w
 			position relative
@@ -353,6 +397,8 @@
 				background-position -1010px -348px
 				border-radius 50%
 				content ""
+				+r($d-l)
+					display none
 			&:after
 				z-index -1
 				right -33px
@@ -366,7 +412,9 @@
 		width 386px
 		background-image url('../images/content/serv-8.jpg')
 		background-position -30px 0px
-
+		+r($d-l)
+			width auto
+			background-position 0 0px
 		.services__item-w
 			position relative
 			height 100%
@@ -381,6 +429,8 @@
 				background-position -1093px -408px
 				border-radius 50%
 				content ""
+				+r($d-l)
+					display none
 			&:after
 				z-index -1
 				right -33px
@@ -394,6 +444,9 @@
 		width 394px
 		background-image url('../images/content/serv-9.jpg')
 		background-position -56px 0px
+		+r($d-l)
+			width auto
+			background-position 0 0px
 
 
 	&__item-w

@@ -5,19 +5,29 @@ mixin header()
 				a.header__logo.logo(href="#logo")
 					+icon('logo', true).logo__icon
 					span.logo__text Extratech
-				.header__lang.lang
-					a.lang__link.lang__link_active(href="#ua") ua
-					a.lang__link(href="#ru") ru
-					a.lang__link(href="#eng") eng
 
-			nav.header__nav.nav
-				ul.nav__list
-					li
-						a(href="#link") Новости
-					li.current-menu-item
-						a(href="#link") Услуги
-					li
-						a(href="#link") Контакты
+			.header__nav-w
+
+				nav.header__nav.nav
+
+					.nav__trigger
+						label.nav__trigger-button(for='nav') Меню
+
+					input.nav__trigger-input#nav(type="checkbox", value="")
+
+					.nav__list-w
+						ul.nav__list
+							li.nav__item
+								a(href="#link") Новости
+							li.nav__item
+								a(href="#link") Услуги
+							li.nav__item
+								a(href="#link") Контакты
+
+						.header__lang.lang
+							a.lang__link.lang__link_active(href="#ua") ua
+							a.lang__link(href="#ru") ru
+							a.lang__link(href="#eng") eng
 
 			.header__contacts.h-contacts
 				.h-contacts__w
@@ -35,6 +45,15 @@ mixin header()
 						a.social__link(href="") Facebook
 					li.social__item.social__item_pint
 						a.social__link(href="") Pinterest
+				ul.h-contacts__social.social
+					li.social__item.social__item_text.social__item_skype-big
+						a.social__link(href="") номер скайпа
+					li.social__item.social__item_text.social__item_phone
+						a.social__link(href="") номер телеграм
+					li.social__item.social__item_text.social__item_phone
+						a.social__link(href="") номер вайбера
+					li.social__item.social__item_text.social__item_email-big
+						a.social__link(href="") e-mail
 
 
 mixin header-inner()
@@ -44,19 +63,29 @@ mixin header-inner()
 				a.header__logo.logo(href="#logo")
 					+icon('logo', true).logo__icon
 					span.logo__text Extratech
-				.header__lang.lang
-					a.lang__link.lang__link_active(href="#ua") ua
-					a.lang__link(href="#ru") ru
-					a.lang__link(href="#eng") eng
 
-			nav.header__nav.nav
-				ul.nav__list
-					li
-						a(href="#link") Новости
-					li.current-menu-item
-						a(href="#link") Услуги
-					li
-						a(href="#link") Контакты
+			.header__nav-w
+
+				nav.header__nav.nav
+
+					.nav__trigger
+						label.nav__trigger-button(for='nav') Меню
+
+					input.nav__trigger-input#nav(type="checkbox", value="")
+
+					.nav__list-w
+						ul.nav__list
+							li.nav__item
+								a(href="#link") Новости
+							li.nav__item
+								a(href="#link") Услуги
+							li.nav__item
+								a(href="#link") Контакты
+
+						.header__lang.lang
+							a.lang__link.lang__link_active(href="#ua") ua
+							a.lang__link(href="#ru") ru
+							a.lang__link(href="#eng") eng
 
 			.header__contacts.h-contacts
 				.h-contacts__w
@@ -74,4 +103,12 @@ mixin header-inner()
 						a.social__link(href="") Facebook
 					li.social__item.social__item_pint
 						a.social__link(href="") Pinterest
-
+				ul.h-contacts__social.social
+					li.social__item.social__item_text.social__item_skype-big
+						a.social__link(href="") номер скайпа
+					li.social__item.social__item_text.social__item_phone
+						a.social__link(href="") номер телеграм
+					li.social__item.social__item_text.social__item_phone
+						a.social__link(href="") номер вайбера
+					li.social__item.social__item_text.social__item_email-big
+						a.social__link(href="") e-mail
